@@ -3,9 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+button{
+  border: none;
+}
+
+a{
+  text-decoration: none; 
+  color: inherit;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+#section {
+  flex: 1;
+}
 
 #aside {
-  border: solid 1px black;
   width: 200px;
   background-color: darkturquoise;
   padding-left: 20px;
@@ -13,43 +31,169 @@
 }
 
 #div1 {
-  border: solid 1px black;
-  width: 100%;
-  margin: 10px 10px 10px 0px;
+  margin: 20px 10px 20px 0px;
 }
+
 #div2 {
-  border: solid 1px black;
-  width: 100%;
+  margin-bottom: 10px;
 }
 
 .menu {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.menu:hover {
+  background-color: paleturquoise;
+}
+
+.menu.selected {
   padding-left: 10px;
-  background-color: #f1f1f1;
-  /* border: solid 1px black; */
-}
-
-p {
-  font-weight: 700;
-}
-
-#section {
-  border: solid 1px black;
-  width: 100%;
+  background-color: white;
+  font-weight: bold;
 }
 
 #header {
-  border: solid 1px rgb(0, 0, 0);
-  height: 50px;
-}
-#article {
-  border: solid 1px rgb(247, 0, 0);
-  height: 100%;
+  box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#main {
+#add-button {
+  background-color: rgb(0, 212, 216);
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+}
+
+.header-button-back {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+  padding: 7px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#article {
+  height: 50%;
+  padding: 20px;
+  width: 100%;
+}
+
+#card {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
-  border: solid 1px rgb(56, 17, 199);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  font-size: 1.5rem;
+  color:rebeccapurple;
+}
+
+.flex-horizontal {
+  display: flex;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+#search-bar {
+  width: 100%;
+  margin-right: 5px;
+  border: 1px, solid, #ccc;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+#search-btn {
+  width: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px, solid, #ccc;
+}
+
+table th,
+table td {
+  width: 33%;
+}
+
+thead th,
+thead td {
+  text-align: center;
+}
+
+tbody th,
+tbody td {
+  text-align: left;
+  color: #4d4d4d;
+}
+
+.pagination {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  padding-top: 5px;
+}
+
+#pag-btn {
+  width: 20px;
+}
+
+#pag-index {
+  width: 20px;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#form {
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  height: 100vh;
+  width: 100%;
+}
+
+.box-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+#article-form {
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+}
+
+#box1-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
 }

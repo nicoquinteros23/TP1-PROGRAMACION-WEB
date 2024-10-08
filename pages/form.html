@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <script src="../script/getListStudents.js"></script>
+    <script src="../script/addStudent.js"></script>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <main id="main">
+      <aside id="aside">
+        <div id="div1"><h3>Trabajo Practico 1</h3></div>
+        <div id="div2">
+          <div id="div2">
+            <a href="../pages/index.html">
+              <div class="menu " id="menu1"><p>Pagina Principal</p></div>
+            </a>
+            <a href="../pages/table.html">
+              <div class="menu selected" id="menu2"><p>Alumnos</p></div>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <section id="section">
+        <header id="header">
+          <div><h2>Alumnos</h2></div>
+          <a href="table.html"> <div class="header-button-back">Atras</div> </a>
+        </header>
+
+        <article id="article-form">
+          <div id="box1-form">
+            <form onsubmit="addStudent(event)" id="form">
+              <div class="box-form">
+                <p class="form-item">Nombre:</p>
+                <p class="form-item">Apellido:</p>
+                <div>
+                  <button type="submit" class="form-item" id="add-button">Agregar</button>
+                </div>
+              </div>
+              <div class="box-form">
+                <input type="text" placeholder="" id="name" required class="form-item"/>
+                <input
+                  type="text"
+                  placeholder=""
+                  id="lastName"
+                  required
+                  class="form-item"
+                />
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
